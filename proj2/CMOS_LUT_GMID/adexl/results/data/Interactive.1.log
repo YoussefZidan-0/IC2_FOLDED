@@ -1,6 +1,6 @@
 Starting Single Run, Sweeps and Corners...
 
-Current time: Sat Apr 19 06:24:31 2025 
+Current time: Sat Apr 19 08:57:19 2025 
 Best design point: 1
 Design specs: 
 	proj2:CMOS_LUT_GMID:1	corner	Nominal - 
@@ -17,6 +17,6 @@ Design parameters:
 
 Interactive.1
 Number of points completed: 64
-Number of simulation errors: 64
+Number of simulation errors: 0
 Interactive.1 completed. 
-Current time: Sat Apr 19 06:26:38 2025 
+Current time: Sat Apr 19 08:58:42 2025 

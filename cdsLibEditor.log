@@ -9,6 +9,7 @@
 \a nrListItemAction(cdsLibEditor->mainTable 0 0)
 \o Active cell: 0 0 "cdsDefTechLib"
 \a nrResizeWindow(cdsLibEditor list(2 55 500 400))
+\a nrResizeWindow(cdsLibEditor list(2 55 791 502))
 \a cdsLibEditor->fileExitButton->value = t
 \a nrSetWindowVisibility(cdsLibEditor "hide")
 \a exit(0)

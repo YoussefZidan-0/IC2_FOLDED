@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.7 - CAT35 10/18/2015 00:06 (sjfnl678) $
 \o Sub version:		sub-version  p009 
-\o Arguments:		-mpssession virtuoso91714 -mpshost berkeley 
+\o Arguments:		-mpssession virtuoso15932 -mpshost berkeley 
 \o Working Directory:	berkeley:/home/cadence/IC2_FOLDED
 \o 64-bit offsets
 \o Qt version: 		4.8.5
@@ -14,29 +14,28 @@
 \o Library Manager customization server connected.
 \w Warning: The directory: '/home/cadence/IC2_project1' does not exist
 \w 	but was defined in libFile '/home/cadence/cds.lib' for Lib 'IC2_project1'.
-\a cdsLibManager->libListBox->value = "tsmcN65"
-\a cdsLibManager->libLineEdit->value = "tsmcN65"
-\a cdsLibManager->editLibraryPathButton->value = t
-\o Starting the cdsLibEditor...
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "proj2"
-\a cdsLibManager->libLineEdit->value = "proj2"
-\a cdsLibManager->cellListBox->value = "CMOS_LUT_GMID"
-\a nrListItemAction(cdsLibManager->cellListBox 0 0)
-\o MPS request: edit design
-\a cdsLibManager->cellLineEdit->value = "CMOS_LUT_GMID"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: The directory: '/home/cadence/IC2_project1' does not exist
-\w 	but was defined in libFile '/home/cadence/cds.lib' for Lib 'IC2_project1'.
 \a cdsLibManager->libListBox->value = "proj2"
 \a cdsLibManager->libLineEdit->value = "proj2"
 \a cdsLibManager->cellListBox->value = "CMOS_LUT_GMID"
 \a cdsLibManager->cellLineEdit->value = "CMOS_LUT_GMID"
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "FOLDED"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "FOLDED"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
 \o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\o MPS service: shutdown
+\o libManager is exiting.
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a exit(0)
