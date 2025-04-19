@@ -3,4 +3,4 @@
 SOFTINCLUDE /home/cadence/cds.lib
 DEFINE MentorObserverLib $MGC_HOME/shared/pkgs/icv/tools/realtime/virtuoso/MentorObserverLib
 DEFINE tsmcN65 /home/cadence/tsmcN65
-DEFINE proj2 /home/cadence/IC2_FOLDED/proj2
+DEFINE proj2 ./proj2

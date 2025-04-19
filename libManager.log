@@ -59,3 +59,22 @@
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->cellLineEdit->value = "FOLDED"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: The directory: '/home/cadence/IC2_project1' does not exist
+\w 	but was defined in libFile '/home/cadence/cds.lib' for Lib 'IC2_project1'.
+\a cdsLibManager->libListBox->value = "proj2"
+\a cdsLibManager->libLineEdit->value = "proj2"
+\a cdsLibManager->cellListBox->value = "FOLDED"
+\a cdsLibManager->cellLineEdit->value = "FOLDED"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o DB was auto refreshed.
