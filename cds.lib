@@ -2,5 +2,5 @@
 # assisted by CdsLibEditor
 SOFTINCLUDE /home/cadence/cds.lib
 DEFINE MentorObserverLib $MGC_HOME/shared/pkgs/icv/tools/realtime/virtuoso/MentorObserverLib
-DEFINE tsmcN65 /home/cadence/tsmcN65
+DEFINE tsmcN65 /home/cadence/tsmc65nm/tsmcN65
 DEFINE proj2 ./proj2
