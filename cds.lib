@@ -1,0 +1,6 @@
+# File Created by cadence,,, at Sat Apr 19 04:21:56 2025
+# assisted by CdsLibEditor
+SOFTINCLUDE /home/cadence/cds.lib
+DEFINE MentorObserverLib $MGC_HOME/shared/pkgs/icv/tools/realtime/virtuoso/MentorObserverLib
+DEFINE tsmcN65 /home/cadence/tsmcN65
+DEFINE proj2 /home/cadence/IC2_FOLDED/proj2
