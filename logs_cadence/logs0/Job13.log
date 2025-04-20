@@ -1,0 +1,135 @@
+*Info*    Exporting services from client ... 
+
+*Info*    Client has finished starting ... 
+
+
+
+*Info*    Configuring the session ...
+
+	Library      = proj2
+	Cell         = FOLDED
+	View         = schematic
+	Simulator    = spectre
+	State Path   = $AXL_SETUPDB_DIR/test_states
+	State Name   = proj2:FOLDED:1_none_Interactive.1
+	Results DB   = /home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.1.rdb
+	Results Dir  = /home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.1/1/proj2:FOLDED:1
+	Results Loc  = /home/cadence/simulation/proj2/FOLDED/adexl/results/data
+	Project Dir  = /home/cadence/simulation
+	Setup DB loc = /home/cadence/IC2_FOLDED/proj2/FOLDED/adexl
+	File Encoding = 0
+
+
+*Info*    Spectre controlMode is set "batch".
+
+
+
+
+
+
+*Info*    Run start for Point ID (1 1) on testbench [ proj2:FOLDED:1
+          ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting var ISS = "134.000u"
+Setting var L_in = "0.5u"
+Setting var Ln_Cascode = "0.6u"
+Setting var Ln_Mirror = "1u"
+Setting var Lp_Cascode = "0.6u"
+Setting var Lp_Mirror = "1u"
+Setting var Vb1 = "2.52289"
+Setting var Vb2 = "2.42156"
+Setting var Vb3 = "0.863896"
+Setting var W_in = "31.2044u"
+Setting var Wn_Cascode = "20.27u"
+Setting var Wn_Mirror = "11.579u"
+Setting var Wp_Cascode = "52.3u"
+Setting var Wp_Mirror = "108.34u"
+Setting temp(T) = 27
+
+*Info*    Netlist Directory =
+          /home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.1/1/proj2:FOLDED:1/netlist
+
+
+*Info*    Data Directory    =
+          /home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.1/1/proj2:FOLDED:1
+
+
+*Info*    Creating Netlist for Point ID (1 1)
+
+generate netlist...
+Begin Incremental Netlisting Apr 20 12:08:45 2025
+ERROR (OSSHNL-108): The property, 'connectivityLastUpdated', specified on library 'proj2', cell 'FOLDED',
+view 'schematic', does not have an integer value. Re-extract the design (File->Check
+and Save menu option) to correct this error.
+
+End netlisting Apr 20 12:08:45 2025
+ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
+      ...unsuccessful.
+
+*Error*   Error ID  = 5012
+*Error*   Error Msg = Failed to create netlist.
+
+
+
+
+
+
+
+
+
+*Info*    Run start for Point ID (1 1) on testbench [ proj2:FOLDED:1
+          ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting var ISS = "134.000u"
+Setting var L_in = "0.5u"
+Setting var Ln_Cascode = "0.6u"
+Setting var Ln_Mirror = "1u"
+Setting var Lp_Cascode = "0.6u"
+Setting var Lp_Mirror = "1u"
+Setting var Vb1 = "2.52289"
+Setting var Vb2 = "2.42156"
+Setting var Vb3 = "0.863896"
+Setting var W_in = "31.2044u"
+Setting var Wn_Cascode = "20.27u"
+Setting var Wn_Mirror = "11.579u"
+Setting var Wp_Cascode = "52.3u"
+Setting var Wp_Mirror = "108.34u"
+Setting temp(T) = 27
+
+*Info*    Netlist Directory =
+          /home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.1/1/proj2:FOLDED:1/netlist
+
+
+*Info*    Data Directory    =
+          /home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.1/1/proj2:FOLDED:1
+
+
+*Info*    Creating Netlist for Point ID (1 1)
+
+generate netlist...
+Begin Incremental Netlisting Apr 20 12:08:45 2025
+ERROR (OSSHNL-108): The property, 'connectivityLastUpdated', specified on library 'proj2', cell 'FOLDED',
+view 'schematic', does not have an integer value. Re-extract the design (File->Check
+and Save menu option) to correct this error.
+
+End netlisting Apr 20 12:08:45 2025
+ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
+      ...unsuccessful.
+
+*Error*   Error ID  = 5012
+*Error*   Error Msg = Failed to create netlist.
+
+
+
+
+Simulation design variables differ from those on the cellView,
+they have been saved in the file "/tmp/saved-design-variables".
+To save future changes, copy variables to cellView before exiting.
