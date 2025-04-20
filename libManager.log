@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.7 - CAT35 10/18/2015 00:06 (sjfnl678) $
 \o Sub version:		sub-version  p009 
-\o Arguments:		-mpssession virtuoso15932 -mpshost berkeley 
+\o Arguments:		-mpssession virtuoso1768 -mpshost berkeley 
 \o Working Directory:	berkeley:/home/cadence/IC2_FOLDED
 \o 64-bit offsets
 \o Qt version: 		4.8.5
@@ -16,16 +16,54 @@
 \w 	but was defined in libFile '/home/cadence/cds.lib' for Lib 'IC2_project1'.
 \a cdsLibManager->libListBox->value = "proj2"
 \a cdsLibManager->libLineEdit->value = "proj2"
+\a cdsLibManager->cellListBox->value = "FOLDED"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a nrListItemAction(cdsLibManager->cellListBox 1 0)
+\a cdsLibManager->cellListBox->value = "FOLDED"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a cdsLibManager->cellLineEdit->value = "FOLDED"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "CMOS_LUT_GMID"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "CMOS_LUT_GMID"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: The directory: '/home/cadence/IC2_project1' does not exist
+\w 	but was defined in libFile '/home/cadence/cds.lib' for Lib 'IC2_project1'.
+\a cdsLibManager->libListBox->value = "proj2"
+\a cdsLibManager->libLineEdit->value = "proj2"
 \a cdsLibManager->cellListBox->value = "CMOS_LUT_GMID"
 \a cdsLibManager->cellLineEdit->value = "CMOS_LUT_GMID"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "adexl"
-\a cdsLibManager->viewLineEdit->value = "adexl"
-\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->cellListBox->value = "FOLDED"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->cellLineEdit->value = "FOLDED"
@@ -33,9 +71,39 @@
 \a cdsLibManager->viewListBox->value = "schematic"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a _lmgrCloseIconify("cdsLibManager" 1)
-\o MPS service: shutdown
-\o libManager is exiting.
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a exit(0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: The directory: '/home/cadence/IC2_project1' does not exist
+\w 	but was defined in libFile '/home/cadence/cds.lib' for Lib 'IC2_project1'.
+\a cdsLibManager->libListBox->value = "proj2"
+\a cdsLibManager->libLineEdit->value = "proj2"
+\a cdsLibManager->cellListBox->value = "FOLDED"
+\a cdsLibManager->cellLineEdit->value = "FOLDED"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: The directory: '/home/cadence/IC2_project1' does not exist
+\w 	but was defined in libFile '/home/cadence/cds.lib' for Lib 'IC2_project1'.
+\a cdsLibManager->libListBox->value = "proj2"
+\a cdsLibManager->libLineEdit->value = "proj2"
+\a cdsLibManager->cellListBox->value = "FOLDED"
+\a cdsLibManager->cellLineEdit->value = "FOLDED"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
