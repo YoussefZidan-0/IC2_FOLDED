@@ -66,7 +66,7 @@
 				</dependentTests>
 			</var>
 			<var>Ln_Cascode
-				<value>0.6u</value>
+				<value>0.5u</value>
 				<dependentTests>
 					<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 				</dependentTests>
@@ -78,7 +78,7 @@
 				</dependentTests>
 			</var>
 			<var>Lp_Cascode
-				<value>0.6u</value>
+				<value>0.4u</value>
 				<dependentTests>
 					<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 				</dependentTests>
@@ -90,25 +90,25 @@
 				</dependentTests>
 			</var>
 			<var>Vb1
-				<value>2.52289</value>
+				<value>2.5</value>
 				<dependentTests>
 					<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>Vb2
-				<value>2.42156</value>
+				<value>1.4</value>
 				<dependentTests>
 					<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>Vb3
-				<value>0.863896</value>
+				<value>1.2</value>
 				<dependentTests>
 					<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>W_in
-				<value>31.2044u</value>
+				<value>50u</value>
 				<dependentTests>
 					<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 				</dependentTests>
@@ -120,7 +120,7 @@
 				</dependentTests>
 			</var>
 			<var>Wn_Mirror
-				<value>11.579u</value>
+				<value>9u</value>
 				<dependentTests>
 					<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 				</dependentTests>
@@ -132,7 +132,13 @@
 				</dependentTests>
 			</var>
 			<var>Wp_Mirror
-				<value>108.34u</value>
+				<value>114u</value>
+				<dependentTests>
+					<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VICM
+				<value>1.65</value>
 				<dependentTests>
 					<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 				</dependentTests>
@@ -147,12 +153,68 @@
 				<value>no</value>
 			</plottingoption>
 			<plottingoption>waveformtemplate
-				<value>                            </value>
+				<value></value>
 			</plottingoption>
 		</plottingoptions>
+		<specs>
+			<spec>proj2:FOLDED:1.GBW
+				<testname>proj2:FOLDED:1</testname>
+				<resname>GBW</resname>
+				<specType>gt</specType>
+				<min>150M</min>
+				<max></max>
+				<target></target>
+				<tol></tol>
+			</spec>
+			<spec>proj2:FOLDED:1.Ao_dB
+				<testname>proj2:FOLDED:1</testname>
+				<resname>Ao_dB</resname>
+				<specType>gt</specType>
+				<min>58</min>
+				<max></max>
+				<target></target>
+				<tol></tol>
+			</spec>
+			<spec>proj2:FOLDED:1.slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")
+				<testname>proj2:FOLDED:1</testname>
+				<resname>slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")</resname>
+				<specType>gt</specType>
+				<min>0.1G</min>
+				<max></max>
+				<target></target>
+				<tol></tol>
+			</spec>
+			<spec>proj2:FOLDED:1.Fu
+				<testname>proj2:FOLDED:1</testname>
+				<resname>Fu</resname>
+				<specType>gt</specType>
+				<min>150M</min>
+				<max></max>
+				<target></target>
+				<tol></tol>
+			</spec>
+			<spec>proj2:FOLDED:1.PM
+				<testname>proj2:FOLDED:1</testname>
+				<resname>PM</resname>
+				<specType>gt</specType>
+				<min>60</min>
+				<max></max>
+				<target></target>
+				<tol></tol>
+			</spec>
+			<spec>proj2:FOLDED:1.GM
+				<testname>proj2:FOLDED:1</testname>
+				<resname>GM</resname>
+				<specType>gt</specType>
+				<min>12</min>
+				<max></max>
+				<target></target>
+				<tol></tol>
+			</spec>
+		</specs>
 	</active>
 	<history>History
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.0
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.62
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -186,7 +248,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>proj2:FOLDED:1_none_Interactive.0</value>
+								<value>proj2:FOLDED:1_none_Interactive.62</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -219,7 +281,7 @@
 						</dependentTests>
 					</var>
 					<var>Ln_Cascode
-						<value>0.6u</value>
+						<value>0.5u</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
@@ -231,7 +293,7 @@
 						</dependentTests>
 					</var>
 					<var>Lp_Cascode
-						<value>0.6u</value>
+						<value>0.4u</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
@@ -243,25 +305,25 @@
 						</dependentTests>
 					</var>
 					<var>Vb1
-						<value>2.52289</value>
+						<value>2.5</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>Vb2
-						<value>2.42156</value>
+						<value>0.6</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>Vb3
-						<value>0.863896</value>
+						<value>1.2</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>W_in
-						<value>31.2044u</value>
+						<value>50u</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
@@ -273,7 +335,7 @@
 						</dependentTests>
 					</var>
 					<var>Wn_Mirror
-						<value>11.579u</value>
+						<value>9u</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
@@ -285,7 +347,13 @@
 						</dependentTests>
 					</var>
 					<var>Wp_Mirror
-						<value>108.34u</value>
+						<value>114u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>1.65</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
@@ -300,28 +368,84 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
+				<specs>
+					<spec>proj2:FOLDED:1.GBW
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GBW</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Ao_dB
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Ao_dB</resname>
+						<specType>gt</specType>
+						<min>58</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")
+						<testname>proj2:FOLDED:1</testname>
+						<resname>slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")</resname>
+						<specType>gt</specType>
+						<min>0.1G</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Fu
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Fu</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.PM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>PM</resname>
+						<specType>gt</specType>
+						<min>60</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.GM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GM</resname>
+						<specType>gt</specType>
+						<min>12</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sun Apr 20 10:48:19 2025
+			<timestamp>Thu Apr 24 11:03:09 2025
 </timestamp>
-			<resultsname>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.0.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.0.rdb</simresults>
+			<resultsname>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.62.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.62.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_104820013</localpsfdir>
-			<psfdir>/home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.0</psfdir>
-			<simdir>$AXL_PROJECT_DIR/proj2/FOLDED/adexl/results/data/Interactive.0</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_110309368</localpsfdir>
+			<psfdir>/home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.62</psfdir>
+			<simdir>$AXL_PROJECT_DIR/proj2/FOLDED/adexl/results/data/Interactive.62</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.0.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.0.log</runlogfile>
+			<runlog>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.62.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.62.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.1
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.63
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -355,7 +479,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>proj2:FOLDED:1_none_Interactive.1</value>
+								<value>proj2:FOLDED:1_none_Interactive.63</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -388,7 +512,7 @@
 						</dependentTests>
 					</var>
 					<var>Ln_Cascode
-						<value>0.6u</value>
+						<value>0.5u</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
@@ -400,7 +524,7 @@
 						</dependentTests>
 					</var>
 					<var>Lp_Cascode
-						<value>0.6u</value>
+						<value>0.4u</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
@@ -412,25 +536,25 @@
 						</dependentTests>
 					</var>
 					<var>Vb1
-						<value>2.52289</value>
+						<value>2.5</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>Vb2
-						<value>2.42156</value>
+						<value>1.4</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>Vb3
-						<value>0.863896</value>
+						<value>1.2</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>W_in
-						<value>31.2044u</value>
+						<value>50u</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
@@ -442,7 +566,7 @@
 						</dependentTests>
 					</var>
 					<var>Wn_Mirror
-						<value>11.579u</value>
+						<value>9u</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
@@ -454,7 +578,13 @@
 						</dependentTests>
 					</var>
 					<var>Wp_Mirror
-						<value>108.34u</value>
+						<value>114u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>1.65</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
@@ -469,28 +599,84 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
+				<specs>
+					<spec>proj2:FOLDED:1.GBW
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GBW</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Ao_dB
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Ao_dB</resname>
+						<specType>gt</specType>
+						<min>58</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")
+						<testname>proj2:FOLDED:1</testname>
+						<resname>slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")</resname>
+						<specType>gt</specType>
+						<min>0.1G</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Fu
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Fu</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.PM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>PM</resname>
+						<specType>gt</specType>
+						<min>60</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.GM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GM</resname>
+						<specType>gt</specType>
+						<min>12</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sun Apr 20 12:08:42 2025
+			<timestamp>Thu Apr 24 11:04:02 2025
 </timestamp>
-			<resultsname>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.1.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
+			<resultsname>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.63.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.63.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_120842898</localpsfdir>
-			<psfdir>/home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.1</psfdir>
-			<simdir>$AXL_PROJECT_DIR/proj2/FOLDED/adexl/results/data/Interactive.1</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_110402175</localpsfdir>
+			<psfdir>/home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.63</psfdir>
+			<simdir>$AXL_PROJECT_DIR/proj2/FOLDED/adexl/results/data/Interactive.63</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.1.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.1.log</runlogfile>
+			<runlog>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.63.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.63.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.2
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.64
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -524,7 +710,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>proj2:FOLDED:1_none_Interactive.2</value>
+								<value>proj2:FOLDED:1_none_Interactive.64</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -557,7 +743,7 @@
 						</dependentTests>
 					</var>
 					<var>Ln_Cascode
-						<value>0.6u</value>
+						<value>0.5u</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
@@ -569,7 +755,7 @@
 						</dependentTests>
 					</var>
 					<var>Lp_Cascode
-						<value>0.6u</value>
+						<value>0.4u</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
@@ -581,25 +767,25 @@
 						</dependentTests>
 					</var>
 					<var>Vb1
-						<value>2.52289</value>
+						<value>2.5</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>Vb2
-						<value>2.42156</value>
+						<value>1.4</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>Vb3
-						<value>0.863896</value>
+						<value>1.2</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>W_in
-						<value>31.2044u</value>
+						<value>50u</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
@@ -611,7 +797,7 @@
 						</dependentTests>
 					</var>
 					<var>Wn_Mirror
-						<value>11.579u</value>
+						<value>9u</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
@@ -623,7 +809,13 @@
 						</dependentTests>
 					</var>
 					<var>Wp_Mirror
-						<value>108.34u</value>
+						<value>114u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>1.65</value>
 						<dependentTests>
 							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
 						</dependentTests>
@@ -638,24 +830,1697 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
+				<specs>
+					<spec>proj2:FOLDED:1.GBW
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GBW</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Ao_dB
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Ao_dB</resname>
+						<specType>gt</specType>
+						<min>58</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")
+						<testname>proj2:FOLDED:1</testname>
+						<resname>slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")</resname>
+						<specType>gt</specType>
+						<min>0.1G</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Fu
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Fu</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.PM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>PM</resname>
+						<specType>gt</specType>
+						<min>60</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.GM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GM</resname>
+						<specType>gt</specType>
+						<min>12</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sun Apr 20 12:09:35 2025
+			<timestamp>Thu Apr 24 11:04:28 2025
 </timestamp>
-			<resultsname>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.2.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
+			<resultsname>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.64.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.64.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_120935958</localpsfdir>
-			<psfdir>/home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.2</psfdir>
-			<simdir>$AXL_PROJECT_DIR/proj2/FOLDED/adexl/results/data/Interactive.2</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_110428274</localpsfdir>
+			<psfdir>/home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.64</psfdir>
+			<simdir>$AXL_PROJECT_DIR/proj2/FOLDED/adexl/results/data/Interactive.64</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.2.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
+			<runlog>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.64.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.64.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.65
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>proj2:FOLDED:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>FOLDED</value>
+							</option>
+							<option>lib
+								<value>proj2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>proj2:FOLDED:1_none_Interactive.65</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>FOLDED</value>
+							</option>
+							<option>lib
+								<value>proj2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>ISS
+						<value>134.000u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_in
+						<value>0.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ln_Cascode
+						<value>0.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ln_Mirror
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp_Cascode
+						<value>0.4u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp_Mirror
+						<value>Ln_Mirror</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb1
+						<value>2.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb2
+						<value>1.4</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb3
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_in
+						<value>50u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wn_Cascode
+						<value>20.27u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wn_Mirror
+						<value>9u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp_Cascode
+						<value>52.3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp_Mirror
+						<value>114u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>1.65</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>proj2:FOLDED:1.GBW
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GBW</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Ao_dB
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Ao_dB</resname>
+						<specType>gt</specType>
+						<min>58</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")
+						<testname>proj2:FOLDED:1</testname>
+						<resname>slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")</resname>
+						<specType>gt</specType>
+						<min>0.1G</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Fu
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Fu</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.PM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>PM</resname>
+						<specType>gt</specType>
+						<min>60</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.GM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GM</resname>
+						<specType>gt</specType>
+						<min>12</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Apr 24 11:07:57 2025
+</timestamp>
+			<resultsname>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.65.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.65.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_110757797</localpsfdir>
+			<psfdir>/home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.65</psfdir>
+			<simdir>$AXL_PROJECT_DIR/proj2/FOLDED/adexl/results/data/Interactive.65</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.65.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.65.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.66
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>proj2:FOLDED:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>FOLDED</value>
+							</option>
+							<option>lib
+								<value>proj2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>proj2:FOLDED:1_none_Interactive.66</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>FOLDED</value>
+							</option>
+							<option>lib
+								<value>proj2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>ISS
+						<value>134.000u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_in
+						<value>0.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ln_Cascode
+						<value>0.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ln_Mirror
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp_Cascode
+						<value>0.4u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp_Mirror
+						<value>Ln_Mirror</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb1
+						<value>2.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb2
+						<value>1.4</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb3
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_in
+						<value>50u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wn_Cascode
+						<value>20.27u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wn_Mirror
+						<value>9u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp_Cascode
+						<value>52.3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp_Mirror
+						<value>114u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>1.65</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>proj2:FOLDED:1.GBW
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GBW</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Ao_dB
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Ao_dB</resname>
+						<specType>gt</specType>
+						<min>58</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")
+						<testname>proj2:FOLDED:1</testname>
+						<resname>slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")</resname>
+						<specType>gt</specType>
+						<min>0.1G</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Fu
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Fu</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.PM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>PM</resname>
+						<specType>gt</specType>
+						<min>60</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.GM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GM</resname>
+						<specType>gt</specType>
+						<min>12</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Apr 24 11:08:35 2025
+</timestamp>
+			<resultsname>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.66.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.66.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_110835223</localpsfdir>
+			<psfdir>/home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.66</psfdir>
+			<simdir>$AXL_PROJECT_DIR/proj2/FOLDED/adexl/results/data/Interactive.66</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.66.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.66.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.67
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>proj2:FOLDED:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>FOLDED</value>
+							</option>
+							<option>lib
+								<value>proj2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>proj2:FOLDED:1_none_Interactive.67</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>FOLDED</value>
+							</option>
+							<option>lib
+								<value>proj2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>ISS
+						<value>134.000u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_in
+						<value>0.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ln_Cascode
+						<value>0.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ln_Mirror
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp_Cascode
+						<value>0.4u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp_Mirror
+						<value>Ln_Mirror</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb1
+						<value>2.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb2
+						<value>1.4</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb3
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_in
+						<value>50u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wn_Cascode
+						<value>20.27u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wn_Mirror
+						<value>9u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp_Cascode
+						<value>52.3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp_Mirror
+						<value>114u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>1.65</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>proj2:FOLDED:1.GBW
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GBW</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Ao_dB
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Ao_dB</resname>
+						<specType>gt</specType>
+						<min>58</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")
+						<testname>proj2:FOLDED:1</testname>
+						<resname>slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")</resname>
+						<specType>gt</specType>
+						<min>0.1G</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Fu
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Fu</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.PM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>PM</resname>
+						<specType>gt</specType>
+						<min>60</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.GM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GM</resname>
+						<specType>gt</specType>
+						<min>12</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Apr 24 11:09:15 2025
+</timestamp>
+			<resultsname>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.67.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.67.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_110915668</localpsfdir>
+			<psfdir>/home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.67</psfdir>
+			<simdir>$AXL_PROJECT_DIR/proj2/FOLDED/adexl/results/data/Interactive.67</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.67.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.67.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.68
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>proj2:FOLDED:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>FOLDED</value>
+							</option>
+							<option>lib
+								<value>proj2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>proj2:FOLDED:1_none_Interactive.68</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>FOLDED</value>
+							</option>
+							<option>lib
+								<value>proj2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>ISS
+						<value>134.000u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_in
+						<value>0.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ln_Cascode
+						<value>0.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ln_Mirror
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp_Cascode
+						<value>0.4u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp_Mirror
+						<value>Ln_Mirror</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb1
+						<value>2.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb2
+						<value>1.4</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb3
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_in
+						<value>50u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wn_Cascode
+						<value>20.27u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wn_Mirror
+						<value>9u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp_Cascode
+						<value>52.3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp_Mirror
+						<value>114u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>1.65</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>proj2:FOLDED:1.GBW
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GBW</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Ao_dB
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Ao_dB</resname>
+						<specType>gt</specType>
+						<min>58</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")
+						<testname>proj2:FOLDED:1</testname>
+						<resname>slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")</resname>
+						<specType>gt</specType>
+						<min>0.1G</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Fu
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Fu</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.PM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>PM</resname>
+						<specType>gt</specType>
+						<min>60</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.GM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GM</resname>
+						<specType>gt</specType>
+						<min>12</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Apr 24 11:14:18 2025
+</timestamp>
+			<resultsname>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.68.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.68.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_111418938</localpsfdir>
+			<psfdir>/home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.68</psfdir>
+			<simdir>$AXL_PROJECT_DIR/proj2/FOLDED/adexl/results/data/Interactive.68</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.68.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.68.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.69
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>proj2:FOLDED:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>FOLDED</value>
+							</option>
+							<option>lib
+								<value>proj2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>proj2:FOLDED:1_none_Interactive.69</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>FOLDED</value>
+							</option>
+							<option>lib
+								<value>proj2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>ISS
+						<value>134.000u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_in
+						<value>0.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ln_Cascode
+						<value>0.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ln_Mirror
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp_Cascode
+						<value>0.4u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp_Mirror
+						<value>Ln_Mirror</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb1
+						<value>2.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb2
+						<value>1.4</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb3
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_in
+						<value>50u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wn_Cascode
+						<value>20.27u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wn_Mirror
+						<value>9u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp_Cascode
+						<value>52.3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp_Mirror
+						<value>114u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>1.65</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>proj2:FOLDED:1.GBW
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GBW</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Ao_dB
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Ao_dB</resname>
+						<specType>gt</specType>
+						<min>58</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")
+						<testname>proj2:FOLDED:1</testname>
+						<resname>slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")</resname>
+						<specType>gt</specType>
+						<min>0.1G</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Fu
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Fu</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.PM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>PM</resname>
+						<specType>gt</specType>
+						<min>60</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.GM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GM</resname>
+						<specType>gt</specType>
+						<min>12</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Apr 24 11:16:44 2025
+</timestamp>
+			<resultsname>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.69.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.69.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_111644348</localpsfdir>
+			<psfdir>/home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.69</psfdir>
+			<simdir>$AXL_PROJECT_DIR/proj2/FOLDED/adexl/results/data/Interactive.69</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.69.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.69.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.70
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>proj2:FOLDED:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>FOLDED</value>
+							</option>
+							<option>lib
+								<value>proj2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>proj2:FOLDED:1_none_Interactive.70</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>FOLDED</value>
+							</option>
+							<option>lib
+								<value>proj2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>ISS
+						<value>134.000u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_in
+						<value>0.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ln_Cascode
+						<value>0.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ln_Mirror
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp_Cascode
+						<value>0.4u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp_Mirror
+						<value>Ln_Mirror</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb1
+						<value>2.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb2
+						<value>1.4</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb3
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_in
+						<value>50u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wn_Cascode
+						<value>20.27u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wn_Mirror
+						<value>9u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp_Cascode
+						<value>52.3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp_Mirror
+						<value>114u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>1.65</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>proj2:FOLDED:1.GBW
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GBW</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Ao_dB
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Ao_dB</resname>
+						<specType>gt</specType>
+						<min>58</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")
+						<testname>proj2:FOLDED:1</testname>
+						<resname>slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")</resname>
+						<specType>gt</specType>
+						<min>0.1G</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Fu
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Fu</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.PM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>PM</resname>
+						<specType>gt</specType>
+						<min>60</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.GM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GM</resname>
+						<specType>gt</specType>
+						<min>12</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Apr 24 11:20:39 2025
+</timestamp>
+			<resultsname>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.70.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.70.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_112039663</localpsfdir>
+			<psfdir>/home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.70</psfdir>
+			<simdir>$AXL_PROJECT_DIR/proj2/FOLDED/adexl/results/data/Interactive.70</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.70.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.70.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.71
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>proj2:FOLDED:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>FOLDED</value>
+							</option>
+							<option>lib
+								<value>proj2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>proj2:FOLDED:1_none_Interactive.71</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>FOLDED</value>
+							</option>
+							<option>lib
+								<value>proj2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>ISS
+						<value>134.000u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_in
+						<value>0.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ln_Cascode
+						<value>0.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ln_Mirror
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp_Cascode
+						<value>0.4u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp_Mirror
+						<value>Ln_Mirror</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb1
+						<value>2.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb2
+						<value>1.4</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vb3
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_in
+						<value>50u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wn_Cascode
+						<value>20.27u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wn_Mirror
+						<value>9u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp_Cascode
+						<value>52.3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp_Mirror
+						<value>114u</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>1.65</value>
+						<dependentTests>
+							<dependentTest omitted="0">proj2:FOLDED:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>proj2:FOLDED:1.GBW
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GBW</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Ao_dB
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Ao_dB</resname>
+						<specType>gt</specType>
+						<min>58</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")
+						<testname>proj2:FOLDED:1</testname>
+						<resname>slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")</resname>
+						<specType>gt</specType>
+						<min>0.1G</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.Fu
+						<testname>proj2:FOLDED:1</testname>
+						<resname>Fu</resname>
+						<specType>gt</specType>
+						<min>150M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.PM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>PM</resname>
+						<specType>gt</specType>
+						<min>60</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>proj2:FOLDED:1.GM
+						<testname>proj2:FOLDED:1</testname>
+						<resname>GM</resname>
+						<specType>gt</specType>
+						<min>12</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Apr 24 11:24:23 2025
+</timestamp>
+			<resultsname>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.71.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.71.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_112423857</localpsfdir>
+			<psfdir>/home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.71</psfdir>
+			<simdir>$AXL_PROJECT_DIR/proj2/FOLDED/adexl/results/data/Interactive.71</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.71.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.71.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>

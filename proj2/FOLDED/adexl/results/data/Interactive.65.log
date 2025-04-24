@@ -1,0 +1,37 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Apr 24 11:07:59 2025 
+Best design point: 1
+Design specs: 
+	proj2:FOLDED:1	corner	Nominal - 
+	GBW		172.6M	Yes
+	BW		490.4k
+	Adc		3.932k
+	Ao_dB		71.89	Yes
+	PM		67.75	Yes
+	GM		Error	No
+	Fu		164.4M	Yes
+	slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")		Error	No
+	slewRate(v("/Vout" ?result "ac") 0.25 nil 0.8 nil 10 90 nil "time")		Error	No
+Design parameters: 
+	ISS		134u
+	L_in		500n
+	Ln_Cascode		500n
+	Ln_Mirror		1u
+	Lp_Cascode		400n
+	Lp_Mirror		1u
+	Vb1		2.5
+	Vb2		1.4
+	Vb3		1.2
+	W_in		50u
+	Wn_Cascode		20.27u
+	Wn_Mirror		9u
+	Wp_Cascode		52.3u
+	Wp_Mirror		114u
+	VICM		1.65
+
+Interactive.65
+Number of points completed: 1
+Number of simulation errors: 3
+Interactive.65 completed. 
+Current time: Thu Apr 24 11:08:04 2025 

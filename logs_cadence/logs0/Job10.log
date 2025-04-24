@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = proj2
-	Cell         = CMOS_LUT_GMID
+	Cell         = FOLDED
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = proj2:CMOS_LUT_GMID:1_none_Interactive.6
-	Results DB   = /home/cadence/IC2_FOLDED/proj2/CMOS_LUT_GMID/adexl/results/data/Interactive.6.rdb
-	Results Dir  = /home/cadence/simulation/proj2/CMOS_LUT_GMID/adexl/results/data/Interactive.6/1/proj2:CMOS_LUT_GMID:1
-	Results Loc  = /home/cadence/simulation/proj2/CMOS_LUT_GMID/adexl/results/data
+	State Name   = proj2:FOLDED:1_none_Interactive.7
+	Results DB   = /home/cadence/IC2_FOLDED/proj2/FOLDED/adexl/results/data/Interactive.7.rdb
+	Results Dir  = /home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.7/1/proj2:FOLDED:1
+	Results Loc  = /home/cadence/simulation/proj2/FOLDED/adexl/results/data
 	Project Dir  = /home/cadence/simulation
-	Setup DB loc = /home/cadence/IC2_FOLDED/proj2/CMOS_LUT_GMID/adexl
+	Setup DB loc = /home/cadence/IC2_FOLDED/proj2/FOLDED/adexl
 	File Encoding = 0
 
 
@@ -27,38 +27,42 @@
 
 
 
-*Info*    Run start for Point ID (4 1) on testbench [
-          proj2:CMOS_LUT_GMID:1 ].
+*Info*    Run start for Point ID (4 1) on testbench [ proj2:FOLDED:1
+          ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var L_n = "0.6u"
-Setting var L_p = "0.6u"
-Setting var Vd = "1.65"
-Setting var Vdn = "1.7"
-Setting var Vdp = "1.7"
-Setting var Vg = "1"
-Setting var Vgn = "1"
-Setting var Vgp = "1"
-Setting var W_n = "10u"
-Setting var W_p = "10u"
+Setting var ISS = "134.000u"
+Setting var L_in = "0.5u"
+Setting var Ln_Cascode = "0.5u"
+Setting var Ln_Mirror = "1u"
+Setting var Lp_Cascode = "0.4u"
+Setting var Lp_Mirror = "1u"
+Setting var Vb1 = "2.52289"
+Setting var Vb2 = "2.42156"
+Setting var Vb3 = "0.863896"
+Setting var W_in = "31.2044u"
+Setting var Wn_Cascode = "20.27u"
+Setting var Wn_Mirror = "11.579u"
+Setting var Wp_Cascode = "52.3u"
+Setting var Wp_Mirror = "108.34u"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/cadence/simulation/proj2/CMOS_LUT_GMID/adexl/results/data/Interactive.6/1/proj2:CMOS_LUT_GMID:1/netlist
+          /home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.7/1/proj2:FOLDED:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/cadence/simulation/proj2/CMOS_LUT_GMID/adexl/results/data/Interactive.6/1/proj2:CMOS_LUT_GMID:1
+          /home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.7/1/proj2:FOLDED:1
 
 
 *Info*    Creating Netlist for Point ID (4 1)
 
 generate netlist...
-Begin Incremental Netlisting Apr 20 10:35:57 2025
-End netlisting Apr 20 10:35:57 2025
+Begin Incremental Netlisting Apr 23 17:23:28 2025
+End netlisting Apr 23 17:23:28 2025
 
 	The netlist is up to date.
 	Time taken to compare the design with netlist:   0.0s
@@ -66,10 +70,10 @@ End netlisting Apr 20 10:35:57 2025
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ proj2:CMOS_LUT_GMID:1 ]
-          for Point ID (4 1).
+*Info*    Running simulation on testbench [ proj2:FOLDED:1 ] for
+          Point ID (4 1).
 
-Delete psf data in /home/cadence/simulation/proj2/CMOS_LUT_GMID/adexl/results/data/Interactive.6/1/proj2:CMOS_LUT_GMID:1/psf.
+Delete psf data in /home/cadence/simulation/proj2/FOLDED/adexl/results/data/Interactive.7/1/proj2:FOLDED:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -83,9 +87,23 @@ reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
+ERROR (ADEXL-2709): Evaluation of output 'GM' returned 'nil' for point:'1' test:'proj2:FOLDED:1'
+	Expression:'gainMargin(v("/Vout" ?result "ac"))'.
+Ensure that the definition of output is correct.
+
+ERROR (ADEXL-2709): Evaluation of output 'slewRate(v("/Vout" ?result "ac") 0.25 nil 0.8 nil 10 90 nil "time")' returned 'nil' for point:'1' test:'proj2:FOLDED:1'
+	Expression:'slewRate(v("/Vout" ?result "ac") 0.25 nil 0.8 nil 10 90 nil "time")'.
+Ensure that the definition of output is correct.
+
+ERROR (ADEXL-2708): Evaluation of output 'slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")' failed for point:'1' test:'proj2:FOLDED:1'
+	Expression:'slewRate(v("/Vout" ?result "ac") 0.25 t 0.8 t 10 90 nil "time")'
+	because of the following error(s)
+	*Error* ilGetNumber: arg must be a number.
+Ensure that the definition of output is correct.
+
 
 *Info*    Run complete for Point ID (4 1) on testbench [
-          proj2:CMOS_LUT_GMID:1 ].
+          proj2:FOLDED:1 ].
 
 
 
